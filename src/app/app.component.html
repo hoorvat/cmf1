@@ -1,0 +1,7 @@
+<div *ngIf="!authCheck.isLoggedIn">
+    <h1>You are not authorized to see this micro-frontend. Please log in!</h1>
+</div>
+
+<div *ngIf="authCheck.isLoggedIn">
+    <h1> This is my custom micro-frontend! </h1>
+</div>
