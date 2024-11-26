@@ -18,7 +18,7 @@ import { filter } from 'rxjs';
     AuthModule.forRoot({
       config: {
         authority: 'http://localhost:8000/realms/VIPCOAT-Realm',
-        redirectUrl: 'http://localhost:10000/',
+        redirectUrl: 'http://localhost:10001/',
         clientId: 'VIPCOAT platform',
         scope: 'openid profile email offline_access',
         responseType: "code",
