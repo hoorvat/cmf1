@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"mf_app1": {
+		"custom_mf": {
 			"projectType": "application",
 			"schematics": {},
 			"root": "",
@@ -13,7 +13,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
-						"outputPath": "dist/mf_app1",
+						"outputPath": "dist/custom_mf",
 						"index": "src/index.html",
 						"main": "src/main.ts",
 						"polyfills": [
@@ -63,11 +63,11 @@
 					"builder": "ngx-build-plus:dev-server",
 					"configurations": {
 						"production": {
-							"browserTarget": "mf_app1:build:production",
+							"browserTarget": "custom_mf:build:production",
 							"extraWebpackConfig": "webpack.prod.config.js"
 						},
 						"development": {
-							"browserTarget": "mf_app1:build:development"
+							"browserTarget": "custom_mf:build:development"
 						}
 					},
 					"defaultConfiguration": "development",
@@ -80,7 +80,7 @@
 				"extract-i18n": {
 					"builder": "ngx-build-plus:extract-i18n",
 					"options": {
-						"browserTarget": "mf_app1:build",
+						"browserTarget": "custom_mf:build",
 						"extraWebpackConfig": "webpack.config.js"
 					}
 				},
